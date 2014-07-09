@@ -1,0 +1,7 @@
+parameters:
+#    cody_interface.example.class: Cody\Bundle\InterfaceBundle\Example
+
+services:
+#    cody_interface.example:
+#        class: %cody_interface.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

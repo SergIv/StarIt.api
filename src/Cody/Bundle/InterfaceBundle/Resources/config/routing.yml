@@ -1,0 +1,3 @@
+cody_interface_homepage:
+    pattern:     /feedback
+    defaults: { _controller: CodyInterfaceBundle:Default:index }

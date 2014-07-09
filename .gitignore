@@ -16,3 +16,4 @@ app/config/parameters.yml
 
 # Composer
 composer.phar
+/nbproject/private/
