@@ -1,3 +1,15 @@
-cody_interface_homepage:
+cody_interface_feedback:
     pattern:     /feedback
+    defaults: { _controller: CodyInterfaceBundle:Default:form }
+cody_interface_homepage:
+    pattern:     /index
     defaults: { _controller: CodyInterfaceBundle:Default:index }
+_ajax_action:
+    pattern:     /ajax
+    defaults: { _controller: CodyInterfaceBundle:Default:pointsByChain }
+    requirements:
+       _method: POST
+task_success:
+    pattern:     /success
+    defaults: { _controller: CodyInterfaceBundle:Default:success }
+    

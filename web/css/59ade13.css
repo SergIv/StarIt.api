@@ -1,0 +1,13 @@
+.centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.form-width {
+    width:50%;
+}
+
+.select-width {
+   width:40%;
+   margin-top:10px;
+}

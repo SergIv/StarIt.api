@@ -1,1 +1,23 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+{% block title %}
+    Feedback
+{% endblock %}
+
+{% block body %}
+    {% block stylesheets %}
+        {{ parent() }}
+        {% stylesheets "@CodyInterfaceBundle/Resources/public/css/*" filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+    
+    {% block javascripts %}
+        {{ parent() }}
+        {% javascripts '@CodyInterfaceBundle/Resources/public/js/*' %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+
+    Hello<br>
+
+{% endblock %}
